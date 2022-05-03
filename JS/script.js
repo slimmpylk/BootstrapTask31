@@ -15,14 +15,10 @@ function changeBg(){
 }
 
 
-fetch('https://yesno.wtf/api')
+fetch('http://ip-api.com/json')
+.then(response => response.json())
+.then(data => {document.getElementById('printHere').innerHTML =
+JSON.stringify(data)
+});
 
-  .then(response => response.json())
-
-  .then( 
-      data => {document.getElementById('printHere').innerHTML = 
-      data.answer
-      document.getElementById('printHere').innerHTML +=
-      '<img src="' + data.image + '"/>' ;
-  }
-); 
+//document.getElementById('printHere').innerHTML
