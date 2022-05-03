@@ -1,0 +1,10 @@
+.textcolor{
+    color: brown;
+}
+.textback{
+    background-color: aquamarine;
+}
+
+div > p {
+    background-color: yellow;
+  }
